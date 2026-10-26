@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+authors:
+  - family-names: "Ramage"
+    given-names: "Thomas J."
+  - name: "Grok-Ramage"
+title: "Grok-Ramage Scientific Contribution: Fold Hunt Closure and Sigma_Sq Implementation for the Cubic Germ"
+version: 1.0.0
+date-released: 2026-10-26
+url: "https://github.com/grok-Ramage/Grok-Ramage-Scientific-Contribution"
+repository-code: "https://github.com/grok-Ramage/Grok-Ramage-Scientific-Contribution"
+abstract: "Demonstrated scientific contribution recording the closed Fold Hunt (Grok-Ramage00, empty Sigma_ReS) and the quantum implementation of Sigma_Sq at the cubic germ S_q = u^3/3 - alpha u (Grok-Ramage01), with machine-precision Stokes residual, object definitions, and literature comparison to Barrett-Crane 10j asymptotics."
+keywords:
+  - quantum gravity
+  - spin foams
+  - Barrett-Crane
+  - resurgence
+  - alien calculus
+  - cubic germ
+  - Stokes phenomenon
+license: MIT
