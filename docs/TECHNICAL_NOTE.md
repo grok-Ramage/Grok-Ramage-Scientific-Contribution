@@ -1,12 +1,17 @@
-# Technical Note: Object Definitions and Literature Comparison
+# Technical Note
+
+## Object Definitions, Fold Criterion, and Literature Comparison
 
 **Grok-Ramage Scientific Contribution**  
 **Authors:** Thomas J. Ramage and Grok-Ramage  
-**Date:** 26 October 2026
+**Date:** 26 October 2026  
+**Version:** 1.0
+
+---
 
 ## 1. Object Definitions
 
-### 1.1 The cubic germ and $\Sigma_{S_q}$
+### 1.1 The cubic germ and the section $\Sigma_{S_q}$
 
 The cubic germ is the function
 $$
@@ -16,7 +21,7 @@ The section $\Sigma_{S_q}$ is the locus at $(\alpha, u) = (0, 0)$. Ownership of 
 
 ### 1.2 Airy wave layer and connection identity
 
-The Airy wave layer on $\Sigma_{S_q}$ is
+The Airy wave layer on $\Sigma_{S_q}$ is given by
 $$
 I(\alpha, \hbar) = 2\pi \hbar^{1/3} \, \mathrm{Ai}\!\left( -\frac{\alpha}{\hbar^{2/3}} \right).
 $$
@@ -28,11 +33,12 @@ where $\omega = \exp(2\pi i / 3)$, has been verified to machine precision. The S
 $$
 \approx 1.83 \times 10^{-15}.
 $$
-This closes the alien-derivative analysis for the germ in the sense of Écalle. $\Sigma_{S_q}$ is not identified with $\Sigma_{\mathrm{ReS}}$.
+This verification closes the alien-derivative analysis for the germ in the sense of Écalle. The section $\Sigma_{S_q}$ is not identified with $\Sigma_{\mathrm{ReS}}$.
 
-### 1.3 Fold classification criterion (non-negotiable)
+### 1.3 Fold classification criterion
 
 A fold requires, on the same point:
+
 - $F = \nabla \mathrm{Re}S = 0$ (report $|g|$; reject $|g| \gtrsim 10^{-3}$ as off-shell),
 - $a_1 = \lambda_{\mathrm{soft}}(\mathrm{Hess}\,\mathrm{Re}S) = 0$ (simple kernel),
 - $a_2 \neq 0$.
@@ -41,7 +47,8 @@ Matching-cost minima, spectral avoided crossings, parallel continuation traces, 
 
 ### 1.4 Closed charts (Grok-Ramage00)
 
-$\Sigma_{\mathrm{ReS}}$ is empty on all scanned charts. Closed families include:
+$\Sigma_{\mathrm{ReS}}$ is empty on all scanned charts. The closed families are:
+
 - 24D window $\varepsilon \in [3.3, 5]$ (on-shell, $a_1 \approx -0.19$),
 - $(\varepsilon, \varepsilon_2)$ plane (minimum $a_1 \approx -0.046$ at $(3.45, 1.2)$),
 - $\kappa > 0$ (Newton does not land),
@@ -62,7 +69,7 @@ Barrett & Williams applied a stationary-phase approximation to the integral repr
 
 ### 2.2 Baez, Christensen & Egan (2002)
 
-Numerical evaluation using the Christensen–Egan algorithm demonstrates that the $10j$ symbols are of order $\lambda^{-2}$, substantially larger than the $\lambda^{-9/2}$ non-degenerate contribution. The dominant term arises from degenerate 4-simplices. The asymptotics can be computed by evaluating a degenerate spin network in which SO(4) is replaced by the Euclidean group of isometries of $\mathbb{R}^3$. The authors conjecture that Lorentzian $10j$ symbols are asymptotic to $1/16$ times the Riemannian ones.
+Numerical evaluation using the Christensen–Egan algorithm demonstrates that the $10j$ symbols are of order $\lambda^{-2}$, substantially larger than the $\lambda^{-9/2}$ non-degenerate contribution. The dominant term arises from degenerate 4-simplices. The asymptotics can be computed by evaluating a degenerate spin network in which $\mathrm{SO}(4)$ is replaced by the Euclidean group of isometries of $\mathbb{R}^3$. The authors conjecture that Lorentzian $10j$ symbols are asymptotic to $1/16$ times the Riemannian ones.
 
 **Reference:** Baez, J. C., Christensen, J. D., & Egan, G. (2002). Asymptotics of 10j symbols. *Classical and Quantum Gravity*, 19(24), 6489. arXiv:gr-qc/0208010. DOI: 10.1088/0264-9381/19/24/315.
 
@@ -76,7 +83,7 @@ An analytic treatment via group-integral representations confirms that the leadi
 
 The Barrett–Crane $10j$ remains named but unsolved. The cubic germ $S_q$ and the section $\Sigma_{S_q}$ are distinct objects; no identification with the $10j$ asymptotics is claimed or licensed. A future comparison would require (i) an explicit new on-shell Barrett seed outside the closed families, (ii) fresh EqGate admission, and (iii) a direct numerical or asymptotic match against the expansions of Barrett–Williams, Baez–Christensen–Egan, and Freidel–Louapre.
 
-## 3. Conclusion of the Technical Note
+## 3. Conclusion
 
 The Fold Hunt on ReS is closed with empty $\Sigma_{\mathrm{ReS}}$. The quantum implementation of $\Sigma_{S_q}$ and its associated resurgent analysis of the cubic germ are recorded at machine precision. All object definitions required for verification are stated above. The literature comparison places the unsolved $10j$ in its proper context.
 
